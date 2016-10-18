@@ -1,0 +1,38 @@
+.tcl-flex(@direction) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.tcl-flex-row {
+  .tcl-flex(row);
+}
+
+.tcl-flex-column {
+  .tcl-flex(column);
+}
+
+.tcl-full-size {
+  width: 100%;
+  height: 100%;
+}
+
+md-list {
+  md-list-item {
+    border-bottom: 1px solid lightgrey;
+    &:first-child {
+      font-weight: 700;
+      border-bottom: 2px solid lightgrey;
+    }
+    > div {
+      margin: 0 10px;
+      &:nth-child(2) {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+  }
+}
