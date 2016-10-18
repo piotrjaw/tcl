@@ -1,0 +1,47 @@
+<html ng-app="app">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TCL App</title>
+    <base href="/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+    <link rel="stylesheet/less" href="components/styling/style.less">
+  </head>
+  <body>
+    <md-toolbar class="tcl-flex-row" style="justify-content:space-between;padding:0 10px;">
+      TCL Application
+      <tcl-user></tcl-user>
+    </md-toolbar>
+    <div style="position:relative;height:calc(100% - 64px);overflow:auto;">
+      <tcl-menu style="position:absolute;top:0;left:0;width:100%;"></tcl-menu>
+      <ui-view style="padding-top:49px;height:calc(100% - 49px);display:block;"></ui-view>
+    </div>
+    <div>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.4/lodash.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-aria.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-messages.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.5.0/angular-local-storage.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+      <script type="text/javascript" src="index.js"></script>
+      <script type="text/javascript" src="components/core/index.js"></script>
+      <script type="text/javascript" src="components/core/views.provider.js"></script>
+      <script type="text/javascript" src="components/core/store.service.js"></script>
+      <script type="text/javascript" src="components/core/hash.service.js"></script>
+      <script type="text/javascript" src="components/core/item.service.js"></script>
+      <script type="text/javascript" src="components/core/user.service.js"></script>
+      <script type="text/javascript" src="components/core/add.directive.js"></script>
+      <script type="text/javascript" src="components/core/list.directive.js"></script>
+      <script type="text/javascript" src="components/core/login.directive.js"></script>
+      <script type="text/javascript" src="components/core/menu.directive.js"></script>
+      <script type="text/javascript" src="components/core/user.directive.js"></script>
+      <script type="text/javascript" src="components/addPage/index.js"></script>
+      <script type="text/javascript" src="components/listPage/index.js"></script>
+      <script type="text/javascript" src="components/loginPage/index.js"></script>
+    </div>
+  </body>
+</html>
